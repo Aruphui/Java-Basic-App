@@ -1,20 +1,19 @@
-apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: spring-Boot-App
+  name: springbootapp
   labels:
-    app: spring-Boot-App
+    app: springbootapp
     tier: frontend
 spec:
   replicas: 2
   template:
     metadata:
-      name: spring-Boot-App-pod
+      name: springpod
       labels:
         app: springboot
     spec:
       containers:
-        - name: springBoot
+        - name: springboot
           image: huiarup/springboot:buildnumber
           ports:
             - containerPort: 9090
