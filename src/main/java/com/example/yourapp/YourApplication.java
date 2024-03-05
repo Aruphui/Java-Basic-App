@@ -15,7 +15,7 @@ public class YourApplication {
 
     @GetMapping("/")
     public String home() {
-        return "Hello, Spring Boot!";
+        return "Hello, This is a Basic Spring Boot!";
     }
 }
 
