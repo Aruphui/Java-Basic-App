@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: springboot
-          image: huiarup/springboot:16
+          image: huiarup/springboot:17
           ports:
             - containerPort: 9090
   selector:
